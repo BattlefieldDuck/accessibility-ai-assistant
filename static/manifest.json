@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Accessibility AI Assistant",
+    "version": "1.0",
+    "description": "Designed to enhance internet accessibility for everyone. Whether you have visual impairments, difficulty reading, or simply prefer a more user-friendly experience.",
+    "icons": {
+        "128": "icons/icon128.png"
+    },
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "side_panel": {
+        "default_path": "index.html"
+    },
+    "permissions": [
+        "activeTab",
+        "sidePanel"
+    ]
+}
