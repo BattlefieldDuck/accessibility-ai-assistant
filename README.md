@@ -4,7 +4,8 @@ Designed to enhance internet accessibility for everyone, whether you have visual
 
 This Chrome extension includes a screen reader with an auto-translate feature and an AI Assistant for summarizing and providing prompts about website content.
 
-![Accessibility AI Assistant Screenshot](screenshot.png)
+![Accessibility AI Assistant](https://github.com/user-attachments/assets/cc9e1729-2bc0-403d-b7c1-81c038ed9bc7)
+
 
 ## Functionality
 
