@@ -2,18 +2,41 @@
     "manifest_version": 3,
     "name": "Accessibility AI Assistant",
     "version": "1.0",
-    "description": "Designed to enhance internet accessibility for everyone. Whether you have visual impairments, difficulty reading, or simply prefer a more user-friendly experience.",
+    "description": "Designed to enhance internet accessibility for everyone, whether you have visual impairments, difficulty reading, or simply prefer a more user-friendly experience.",
     "icons": {
         "128": "icons/icon128.png"
     },
     "background": {
         "service_worker": "service-worker.js"
     },
+    "options_page": "options.html",
     "side_panel": {
-        "default_path": "index.html"
+        "default_path": "sidepanel.html"
     },
     "permissions": [
         "activeTab",
-        "sidePanel"
+        "aiLanguageModelOriginTrial",
+        "contextMenus",
+        "sidePanel",
+        "scripting",
+        "storage",
+        "tts",
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content-script.js"
+            ]
+        }
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "trial_tokens": [
+        "ArIx61vjdpU9Gk6jRY/Ekd6XyRbXxJBYp4ClhFN8IoCVx7R5C8vSzqqdggY9WRb0bCP+ehX/jDKD+8k6o+UFnQAAAAB4eyJvcmlnaW4iOiJjaHJvbWUtZXh0ZW5zaW9uOi8vaWFwbWxpbm9tbWhia2Fwb2ZjbmRlamJjbmljZWNnZWEiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElGb3JFeHRlbnNpb24iLCJleHBpcnkiOjE3NjA0ODYzOTl9"
     ]
 }

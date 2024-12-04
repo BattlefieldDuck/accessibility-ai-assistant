@@ -1,0 +1,9 @@
+export { default as EllipsisVertical } from "lucide-svelte/icons/ellipsis-vertical";
+export { default as Send } from "lucide-svelte/icons/send";
+export { default as Sparkles } from "lucide-svelte/icons/sparkles";
+export { default as Copy } from "lucide-svelte/icons/copy";
+export { default as Volume2 } from "lucide-svelte/icons/volume-2";
+export { default as Mic } from "lucide-svelte/icons/mic";
+export { default as LoaderCircle } from "lucide-svelte/icons/loader-circle";
+export { default as Speech } from "lucide-svelte/icons/speech";
+export { default as Languages } from "lucide-svelte/icons/languages";
